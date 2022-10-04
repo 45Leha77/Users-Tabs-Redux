@@ -1,0 +1,9 @@
+menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+  li {
+    cursor: pointer;
+  }
+}

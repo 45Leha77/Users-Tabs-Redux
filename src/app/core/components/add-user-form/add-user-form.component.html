@@ -1,0 +1,18 @@
+<form [formGroup]="form" (ngSubmit)="onFormSubmit()">
+  <h1>Create form</h1>
+  <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name" />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Info</mat-label>
+    <input matInput formControlName="info" />
+  </mat-form-field>
+  <button mat-raised-button color="primary" [disabled]="!form.valid">
+    Submit
+  </button>
+</form>
